@@ -1,7 +1,7 @@
 package Module;
 
 public class Academia {
-
+    //Atributos da Classe
     private Aluno[] matriculados;
     private int quantidade;
     private final int LIMITE = 3;
@@ -9,6 +9,7 @@ public class Academia {
     private FilaEspera filaEspera;
 
     public Academia() {
+
         matriculados = new Aluno[LIMITE];
         quantidade = 0;
         filaEspera = new FilaEspera();

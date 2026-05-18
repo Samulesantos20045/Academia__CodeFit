@@ -16,7 +16,7 @@ public class Main {
         do {
 
             System.out.println("\n===== ACADEMIA =====");
-
+            //MENU PRINCIPAL DE OPÇOES
             System.out.println("1. Matricular aluno");
             System.out.println("2. Cancelar matrícula");
             System.out.println("3. Pesquisar aluno");
@@ -32,7 +32,7 @@ public class Main {
             switch (opcao) {
 
                 case 1:
-
+                //CADASTRO DO ALUNO NA ACADEMIA
                     System.out.print("ID: ");
                     int id = sc.nextInt();
                     sc.nextLine();
@@ -45,7 +45,7 @@ public class Main {
                     break;
 
                 case 2:
-
+                    //CANCELAR MATRICULA
                     System.out.print("ID do aluno: ");
                     int removerId = sc.nextInt();
 
@@ -54,7 +54,7 @@ public class Main {
                     break;
 
                 case 3:
-
+                    // PESQUISAR POR ALUNO
                     System.out.print("ID do aluno: ");
                     int buscaId = sc.nextInt();
 
@@ -69,19 +69,19 @@ public class Main {
                     break;
 
                 case 4:
-
+                //LISTA DE MATRICULADOS NA ACADEMIA
                     academia.listarMatriculados();
 
                     break;
 
                 case 5:
-
+                //LISTA DOS QUE ESTÃO AGUARDANDO VAGA NA ACADEMIA
                     academia.listarFilaEspera();
 
                     break;
 
                 case 6:
-
+                //OPÇÃO DE TREINOS DISPONIVEIS PARA ADICIONAR A PILHA
                     System.out.print("ID do aluno: ");
                     int treinoId = sc.nextInt();
                     sc.nextLine();
@@ -123,7 +123,7 @@ public class Main {
                         default:
                             System.out.println("Treino inválido.");
                     }
-
+                    //ADICIONA O TREINO ESCOLHIDO A PILHA
                     if (!treino.equals("")) {
                         academia.escolherTreino(treinoId, treino);
                     }
@@ -131,7 +131,7 @@ public class Main {
                     break;
 
                 case 7:
-
+                    //EXECUTA A PILHA DE TREINO DOS ALUNOS MATRICULADOS.
                     System.out.print("ID do aluno: ");
                     int executarId = sc.nextInt();
 
